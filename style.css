@@ -1,16 +1,14 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
   font-family: "Libre Baskerville", serif;
-  font-weight: 300;
-  font-style: italic;
+  box-sizing: border-box; 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-variant: small-caps;
 }
 .about {
   overflow: auto;
@@ -18,29 +16,34 @@ h6 {
 
 .navbar {
   background: #565656;
+  padding: 10%;
 }
 
-a {
-  text-decoration: none;
-}
-
-
-.navbar_home {
+.nav-link {
+  margin: 5px;
+  padding: 5px;
   text-decoration: none;
   color: #ffffff;
-  cursor: pointer;
 }
 
 .navbar_items {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li :hover {
+  color: #fba82cea;
 }
 
 .intro-block {
   display: flex;
   align-items: center;
-  height: 25vh;
   background-color: #fba82cea;
   padding: 5%;
+  
 }
 
 .aboutpic {
