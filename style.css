@@ -1,6 +1,7 @@
 body {
-  font-family: "Chivo", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 300;
+  font-style: italic;
 }
 
 h1,
@@ -9,77 +10,57 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Libre Baskerville", serif;
 }
 .about {
   overflow: auto;
 }
 
 .navbar {
-  background: #3b3b3b;
+  background: #565656;
 }
 
-.nav-link,
-.navbar-brand {
+a {
+  text-decoration: none;
+}
+
+
+.navbar_home {
+  text-decoration: none;
   color: #ffffff;
   cursor: pointer;
 }
 
-.navbar-brand:hover {
-  text-decoration: underline;
-  text-decoration-color: #ffce00;
-
-  color: #3b3b3b;
+.navbar_items {
+  list-style: none;
 }
 
-.nav-link {
-  margin-right: 1em !important;
+.intro-block {
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  background-color: #fba82cea;
+  padding: 5%;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
-  text-decoration-color: #ffce00;
-  color: #c07e7ea9;
+.aboutpic {
+  border: 1px solid #000000;
+  border-radius: 20%;
+  width: 130px;
+  height: auto;
+  margin: 10px auto;
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
+.intro-block-text {
+  margin: 5%;
+  padding: 5%;
 }
-
-.navbar-toggler-icon {
-  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color="ff);
-}
-
-.jumbotron {
-  color: #000000;
-  height: 50vh;
-  background-color: #d3c3c3;
-  padding: 25% 15% 0 15%;
-  align-content: center;
-}
-
-/*.intropic {
-    display: flex;
-    align-items: flex-end;
-    height: 65%;    
-}*/
 
 #app {
   color: black;
   font-size: 30px;
 }
-
-.container-fluid {
-  background-color: teal;
-}
-
-.aboutpic {
-  border-radius: 50%;
-  height: 40vh;
-  width: 55vw;
-}
+/*
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -101,7 +82,7 @@ h6 {
   }
   .aboutpic {
     display: flex;
-    border-radius: 50%;
+    border: 1px solid #000000;
     height: 60vh;
     width: 20vw;
     align-content: center;
@@ -113,3 +94,4 @@ h6 {
 @media (min-width: 1200px) {
   ...;
 }
+*/

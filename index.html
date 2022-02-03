@@ -6,52 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio Website" author="Julia Krueger-Pfannebecker">
     <title>Julia Krueger-Pfannebecker | Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i">  
-    <link rel="stylesheet" href="style.css">
-    
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">        
 </head>
+
 <body>
-<!--Navigation-->  
- 
-<nav class="navbar navbar-expand-lg fixed-top">  
-  <a class="navbar-brand" href="#">Home</a>
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
-  <span class="navbar-toggler-icon"></span>
- </button>
- <div class="collapse navbar-collapse" id="navbarSupportedContent">    
-    <ul class="navbar-nav mr-4">
-      <li class="nav-item">
+<!--Navigation-->
+<nav class="navbar">  
+  <a class="navbar_home" href="#">Home</a>  
+    <ul class="navbar_items">
+      <li class="navbar_item-about">
        <a class="nav-link" data-value="about" href="#">About</a>        
       </li>  
-      <li class="nav-item">
-        <a class="nav-link " data-value="skills"href="#">Skills & Tools</a>    
+      <li class="navbar_item-skills">
+        <a class="nav-link" data-value="skills"href="#">Skills & Tools</a>    
       </li>
-      <li class="nav-item"> 
-        <a class="nav-link " data-value="work" href="#">Work</a>         
+      <li class="navbar_item-work"> 
+        <a class="nav-link" data-value="work" href="#">Work</a>         
       </li>   
-      <li class="nav-item"> 
-      <a class="nav-link " data-value="contact" href="#">Contact</a>       
+      <li class="navbar_item-contact"> 
+      <a class="nav-link" data-value="contact" href="#">Contact</a>       
     </li> 
  </ul> 
  </div>
 </nav>
-<!--Header-->
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="introducing">
-    <!--<img class="intropic" src="img/Cartoon me.jpg">-->   
-    <h1>Hi there, <br> I am Julia.</h1>
-    <div id="app"></div>     
-  </div>
+<!--Header-->
+<section class="intro-block">
+    <!--<img and intro text including typewriter>-->  
+    <div class="intro-block-img">
+      <img class="aboutpic" src="img/Ohba.jpg">
+    </div>
+    <div class="intro-block-text">
+      <h1>Hi there, <br> I am Julia.</h1>
+    </div>    
+</section>   
+
+<!--
+    <div id="app"></div>  
+    
 </div>
+-->
 
 <!--About me-->
 <section class="about">
-  <div class="container-fluid">
-    <img class="aboutpic" src="img/Ohba.jpg">
     <h2 class="about-title">About me</h2>
     <p class="about-text">I am a Digital humanities student interested in Webdesign and Development</p>
   </div>
