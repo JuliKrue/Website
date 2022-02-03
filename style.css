@@ -20,8 +20,6 @@ h1 {
 }
 
 .nav-link {
-  margin: 5px;
-  padding: 5px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -34,8 +32,8 @@ h1 {
   text-decoration: none;
 }
 
-.navbar_items li:hover {
-  color: #fba82cea;
+.nav-link:hover {
+  color: #f39b16ea;
 }
 
 .intro-block {
