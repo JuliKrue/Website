@@ -1,0 +1,115 @@
+body {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.about {
+  overflow: auto;
+}
+
+.navbar {
+  background: #3b3b3b;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffce00;
+
+  color: #3b3b3b;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffce00;
+  color: #c07e7ea9;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color="ff);
+}
+
+.jumbotron {
+  color: #000000;
+  height: 50vh;
+  background-color: #d3c3c3;
+  padding: 25% 15% 0 15%;
+  align-content: center;
+}
+
+/*.intropic {
+    display: flex;
+    align-items: flex-end;
+    height: 65%;    
+}*/
+
+#app {
+  color: black;
+  font-size: 30px;
+}
+
+.container-fluid {
+  background-color: teal;
+}
+
+.aboutpic {
+  border-radius: 50%;
+  height: 40vh;
+  width: 55vw;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  ...;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .jumbotron {
+    color: #000000;
+    height: 70vh;
+    background-color: #d3c3c3;
+    padding: 10% 0 0 15%;
+  }
+  .aboutpic {
+    display: flex;
+    border-radius: 50%;
+    height: 60vh;
+    width: 20vw;
+    align-content: center;
+  }
+  ...;
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  ...;
+}
