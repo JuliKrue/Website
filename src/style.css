@@ -1,8 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Libre Baskerville", serif;
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: sans-serif, Helvetica, Arial;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body .nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #f00;
 }
 
 h1,
@@ -11,14 +25,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Libre Baskerville", serif;
+  /* font-family: "Libre Baskerville", serif;*/
   font-weight: 400;
   font-variant: small-caps;
 }
 
 .navbar {
   background: #565656;
-  padding: 5%;
 }
 
 .nav-link {
@@ -27,7 +40,9 @@ h6 {
 }
 
 .navbar_items {
+  height: 64px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
   cursor: pointer;
@@ -36,27 +51,28 @@ h6 {
 
 .intro {
   background-color: #fba82cea;
-  height: 100vmin;
+  display: flex;
+  /* height: 100vmin;
   left: 50%;
   position: absolute;
   top: 37%;
   transform: translate(-50%, -50%);
-  width: 100vmin;
+  width: 100vmin; */
 }
-.intro > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
+
+.intro_text {
+  display: flex;
+  flex-direction: column;
 }
+
 .intro > div div {
   font-size: 12vmin;
   padding: 2vmin 0;
-  position: absolute;
+  /* position: absolute;*/
 }
-.intro > div div span {
+/* .intro > div div span {
   display: block;
-}
+} */
 .intro > div.intro_text-top {
   top: 0;
   padding: 10%;
@@ -114,11 +130,11 @@ h6 {
 }
 
 .about {
-  position: absolute;
-  top: 50%;
+  /* position: absolute; */
+  /* top: 50%;
+  min-height: 50%; */
   background-color: #ffffff;
   color: #565656;
-  min-height: 50%;
 }
 
 .about_title {
