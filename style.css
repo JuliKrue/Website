@@ -113,10 +113,19 @@ h6 {
   margin: 8%;
 }
 
-#app {
-  color: black;
-  font-size: 30px;
+.about {
+  position: absolute;
+  top: 50%;
+  background-color: #ffffff;
+  color: #565656;
+  min-height: 50%;
 }
+
+.about_title {
+  display: flex;
+  justify-content: center;
+}
+
 /*
 
 /*Small devices (landscape phones, 576px and up)*/
