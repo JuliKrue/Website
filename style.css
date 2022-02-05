@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3,
@@ -17,65 +22,58 @@ h6 {
 }
 
 .navbar {
-  background: #565656;
-  padding: 5%;
+  background: #f7f4e9;
+  border-bottom: 1px solid black;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #ef0d50;
 }
 
 .navbar_items {
   display: flex;
-  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
-  cursor: pointer;
   text-decoration: none;
 }
 
-.intro {
-  background-color: #fba82cea;
-  height: 100vmin;
-  left: 50%;
-  position: absolute;
-  top: 37%;
-  transform: translate(-50%, -50%);
-  width: 100vmin;
+.intro_text {
+  background-color: #f1ded1;
+  display: flex;
+  flex-direction: column;
 }
-.intro > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-.intro > div div {
+
+.intro_text > div div {
   font-size: 12vmin;
   padding: 2vmin 0;
-  position: absolute;
 }
-.intro > div div span {
+
+.intro_text > div div span {
   display: block;
 }
-.intro > div.intro_text-top {
+
+.intro_text > div.intro_text-top {
   top: 0;
   padding: 10%;
 }
-.intro > div.intro_text-top div {
+.intro_text > div.intro_text-top div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
 }
-.intro > div.intro_text-top div span:first-child {
-  color: #565656;
+.intro_text > div.intro_text-top div span:first-child {
+  color: #fba82cea;
 }
-.intro > div.intro_text-bot {
+.intro_text > div.intro_text-bot {
   bottom: 0;
   padding-left: 20%;
 }
-.intro > div.intro_text-bot div {
+.intro_text > div.intro_text-bot div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
@@ -105,20 +103,21 @@ h6 {
   }
 }
 
+.intro_img {
+  display: flex;
+  justify-content: space-between;
+}
 .aboutpicture {
   border: 1px solid #565656;
   width: 120px;
-  height: auto;
+  /*height: auto;
   float: right;
-  margin: 8%;
+  margin: 8%;*/
 }
 
 .about {
-  position: absolute;
-  top: 50%;
-  background-color: #ffffff;
-  color: #565656;
-  min-height: 50%;
+  background-color: #d0e8f7;
+  color: #2f3538;
 }
 
 .about_title {
