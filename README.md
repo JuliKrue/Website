@@ -6,14 +6,8 @@ Html, CSS and JS
 
 no frameworks in first draft
 
-##To Do:
-
-Use BEM
-
-No Hamburger menu --> accessibility
-
-Typewriter.js
-
-Animations on Skills part
-
+##Structure:
+Intro Section: Animation text, img, Flexbox
+About section: Text and image
+Skills: Card style
 Add Contact icons
