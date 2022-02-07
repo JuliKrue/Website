@@ -8,6 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: #f1ded1;
 }
 
 h1,
@@ -40,25 +41,32 @@ h6 {
   text-decoration: none;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  background-color: #f7f4e9;
+}
+
 .intro_text {
-  background-color: #f1ded1;
   display: flex;
   flex-direction: column;
 }
 
 .intro_text > div div {
   font-size: 12vmin;
-  padding: 2vmin 0;
+  padding: 2vmin 0; 
 }
 
-.intro_text > div div span {
-  display: block;
+.intro_text > .text_top_span {
+  display: block; 
 }
 
 .intro_text > div.intro_text-top {
   top: 0;
-  padding: 10%;
+  padding: 5%; 
 }
+
 .intro_text > div.intro_text-top div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
@@ -69,10 +77,14 @@ h6 {
 .intro_text > div.intro_text-top div span:first-child {
   color: #fba82cea;
 }
+
 .intro_text > div.intro_text-bot {
+  display: block;
   bottom: 0;
-  padding-left: 20%;
+  padding-left: 15%;
+  padding-bottom: 5%;
 }
+
 .intro_text > div.intro_text-bot div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
@@ -103,17 +115,14 @@ h6 {
   }
 }
 
+
 .intro_img {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  display: flex; 
 }
+
 .aboutpicture {
   border: 1px solid #565656;
   width: 120px;
-  /*height: auto;
-  float: right;
-  margin: 8%;*/
 }
 
 .about {
