@@ -49,27 +49,24 @@ h6 {
 .intro {
   display: flex;
   flex-direction: column;
+  width: 50%;
   margin: 5%;
   background-color: #f7f4e9;
-  border: 2px solid #565656;
+  border: 1px solid #565656;
 }
 
 .intro_text {
-  display: flex;
-  flex-direction: column;
 }
 
 .intro_text > div div {
-  font-size: 12vmin;
-  padding: 2vmin 0;
+  font-size: 10vmin;
 }
 
 .intro_text > .text_top_span {
   display: block;
 }
 
-.intro_text > div.intro_text-top {
-  top: 0;
+.intro_text > .intro_text-top {
   padding: 5%;
 }
 
@@ -121,6 +118,22 @@ h6 {
   }
 }
 
+.intro_aside {
+  display: flex;
+  flex-direction: row;
+  background-color: #ef0d50;
+  z-index: 2;
+  width: 40%;
+  padding: 5%;
+}
+
+.intro_img {
+}
+
+.aboutpicture {
+  border: 1px solid #565656;
+  width: 200px;
+}
 .about {
   background-color: #d0e8f7;
   color: #2f3538;
@@ -129,15 +142,6 @@ h6 {
 .about_title {
   display: flex;
   justify-content: center;
-}
-
-.intro_img {
-  display: flex;
-}
-
-.aboutpicture {
-  border: 1px solid #565656;
-  width: 120px;
 }
 
 /*
