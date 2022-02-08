@@ -53,6 +53,7 @@ h6 {
 }
 
 .intro_text {
+  display: inline-block;
 }
 
 .intro_text > div div {
@@ -81,7 +82,7 @@ h6 {
 .intro_text > div.intro_text-bot {
   display: block;
   bottom: 0;
-  padding-left: 15%;
+  padding-left: 10%;
   padding-bottom: 5%;
 }
 
@@ -115,11 +116,10 @@ h6 {
   }
 }
 
-.intro_aside {
-}
-
 .intro_img {
-  background-color: #ef0d50;
+  margin-left: 50%;
+  margin-top: -15rem;
+  padding-top: 45px;
 }
 
 .aboutpicture {
