@@ -45,48 +45,49 @@ h6 {
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   margin: 5%;
   background-color: #f7f4e9;
   border: 1px solid #565656;
 }
 
 .intro_text {
-  display: inline-block;
+  grid-column: 1/3;
 }
 
-.intro_text > div div {
-  font-size: 10vmin;
+.intro_text>div div {
+  font-size: 15vmin;
 }
 
-.intro_text > .text_top_span {
+.intro_text>.text_top_span {
   display: block;
 }
 
-.intro_text > .intro_text-top {
+.intro_text>.intro_text-top {
   padding: 5%;
 }
 
-.intro_text > div.intro_text-top div {
+.intro_text>div.intro_text-top div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
 }
-.intro_text > div.intro_text-top div span:first-child {
+
+.intro_text>div.intro_text-top div span:first-child {
   color: #fba82cea;
 }
 
-.intro_text > div.intro_text-bot {
+.intro_text>div.intro_text-bot {
   display: block;
   bottom: 0;
-  padding-left: 10%;
+  padding-left: 20%;
   padding-bottom: 5%;
 }
 
-.intro_text > div.intro_text-bot div {
+.intro_text>div.intro_text-bot div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
@@ -98,10 +99,12 @@ h6 {
   0% {
     transform: translate3d(0, 100%, 0);
   }
+
   40%,
   60% {
     transform: translate3d(0, 50%, 0);
   }
+
   100% {
     transform: translate3d(0, 0, 0);
   }
@@ -111,22 +114,17 @@ h6 {
   0% {
     transform: translate3d(0, -100%, 0);
   }
+
   100% {
     transform: translate3d(0, 0, 0);
   }
 }
 
-.intro_img {
-  margin-left: 50%;
-  margin-top: -15rem;
-  padding-top: 45px;
-}
-
-.aboutpicture {
-  border: 1px solid #565656;
-  width: 200px;
-}
 .about {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin: 5%;
   background-color: #d0e8f7;
   color: #2f3538;
 }
@@ -136,33 +134,10 @@ h6 {
   justify-content: center;
 }
 
+.aboutpicture {
+  float: left;
+  border: 1px solid #565656;
+  width: 200px;
+}
+
 /*
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  .jumbotron {
-    color: #000000;
-    height: 70vh;
-    background-color: #d3c3c3;
-    padding: 10% 0 0 15%;
-  }
-  .aboutpic {
-    display: flex;
-    border: 1px solid #000000;
-    height: 60vh;
-    width: 20vw;
-    align-content: center;
-  }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-}
