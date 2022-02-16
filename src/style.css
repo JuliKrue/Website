@@ -122,19 +122,24 @@ h6 {
   }
 }
 
-img {
-  height: 250px;
-  width: 180px;
-  margin-left: 60%;
-}
-
 .about {
   margin: 5%;
   background-color: #d0e8f7;
   color: #2f3538;
 }
 
+img {
+  height: 250px;
+  width: 180px;
+}
+
 .about_title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+.about_text {
+  padding: 25px;
 }
