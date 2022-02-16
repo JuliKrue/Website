@@ -129,8 +129,7 @@ h6 {
 }
 
 img {
-  height: 250px;
-  width: 180px;
+  width: 100%;
 }
 
 .about_title {
@@ -142,4 +141,14 @@ img {
 
 .about_text {
   padding: 25px;
+  flex: 1 1 200px;
+}
+
+.about_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_image {
+  flex: 0 1 200px;
 }
