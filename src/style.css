@@ -14,25 +14,27 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
+h6,
+p {
+  font-family: 'Lato', sans-serif;
   box-sizing: border-box;
-  font-variant: small-caps;
+  
 }
 
 .navbar {
   background: #f7f4e9;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ef0d50;
 }
 
 .nav-link {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #ef0d50;
+  color: #2f3538;
+  font-family: 'Lato', sans serif;
 }
 
 .nav-link:hover {
-  color: #2f3538;
+  color: #ef0d50;
   
 }
 
@@ -56,6 +58,9 @@ h6 {
 
 .intro_text > div div {
   font-size: 15vmin;
+  font-family: 'Montserrat', sans serif;
+  font-style: italic;
+  font-weight:bold;
  
 }
 
@@ -124,6 +129,8 @@ h6 {
 .about {
   margin: 5%;
   color: #2f3538;
+  border-bottom: 1px solid #ef0d50;
+  line-height: 2;
 }
 
 img {
@@ -135,6 +142,7 @@ img {
   justify-content: flex-start;
   padding-top: 3%;
   padding-left: 5%;
+  border-bottom: 1px solid #ef0d50;
 }
 
 .about_text {
