@@ -146,8 +146,20 @@ img {
 }
 
 .about_text {
+  animation: textAnimation 2s ease-in;
   padding: 25px;
   flex: 1 1 200px;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .about_flex {
