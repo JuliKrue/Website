@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f1ded1;
+  background-color: #f7f4e9;
 }
 
 h1,
@@ -27,12 +27,13 @@ h6 {
 
 .nav-link {
   text-decoration: none;
+  font-size: 1.5rem;
   color: #ef0d50;
 }
 
 .nav-link:hover {
-  color: #f7f4e9;
-  background-color: #ef0d50;
+  color: #2f3538;
+  
 }
 
 .navbar_items {
@@ -45,29 +46,27 @@ h6 {
 }
 
 .intro {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   margin: 5%;
-  background-color: #f7f4e9;
-  border: 1px solid #565656;
+	transform: skewY(-11deg);
+  
 }
 
-.intro_text {
-  grid-column: 1/4;
-  grid-row: 1/4;
-}
 
 .intro_text > div div {
-  font-size: 10vmin;
+  font-size: 15vmin;
+ 
 }
 
 .intro_text > .text_top_span {
   display: block;
+  
 }
 
 .intro_text > .intro_text-top {
   padding: 5%;
+  border-bottom: 1px solid #ef0d50;
 }
 
 .intro_text > div.intro_text-top div {
@@ -79,7 +78,7 @@ h6 {
 }
 
 .intro_text > div.intro_text-top div span:first-child {
-  color: #fba82cea;
+  color: #ef0d50;
 }
 
 .intro_text > div.intro_text-bot {
@@ -124,7 +123,6 @@ h6 {
 
 .about {
   margin: 5%;
-  background-color: #d0e8f7;
   color: #2f3538;
 }
 
