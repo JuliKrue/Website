@@ -16,7 +16,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+li {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
@@ -164,19 +165,31 @@ img {
 
 .timeline_flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style-type: none;
 }
 
 .timeline_details {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-bottom: 2px solid #ef0d50;
+  flex: 0 1 30px;
 }
 
 .tl_what {
   display: flex;
-  justify-content: center;
+  flex: 0 1 30px;
+  border-top: 2px solid #ef0d50;
+}
+
+.tl_where {
+  display: flex;
+  padding: 2%;
+}
+
+.tl_when {
+  display: flex;
+
+
 }
