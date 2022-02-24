@@ -167,20 +167,19 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   list-style-type: none;
+
 }
 
 .timeline_details {
   display: flex;
   flex-direction: column;
-  flex: 0 1 30px;
+  border-bottom: 2px solid #ef0d50;
 }
 
 .tl_what {
   display: flex;
-  flex: 0 1 30px;
-  border-top: 2px solid #ef0d50;
+  padding: 2%;
 }
 
 .tl_where {
@@ -190,6 +189,4 @@ img {
 
 .tl_when {
   display: flex;
-
-
 }
