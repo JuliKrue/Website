@@ -190,3 +190,75 @@ img {
 .tl_when {
   display: flex;
 }
+
+.footer_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  border-top: 1px solid #ef0d50;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  color: #ef0d50;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+
+.fa-linkedin:hover {
+  color: #007bb5;
+}
+
+.fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro_projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project_text>div div {
+  font-size: 15vmin;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.project_text>.text_top_span {
+  display: block;
+}
+
+.project_text>.project_text-top {
+  padding: 5%;
+}
+
+.project_text>div.project_text-top div {
+  animation: slide 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+.project_text>div.project_text-top div span:first-child {
+  color: #ef0d50;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(0);
+  }
+}
