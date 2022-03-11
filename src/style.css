@@ -272,7 +272,7 @@ img {
 
 .image_card {
   display: flex;
-  flex: 0 1 20%;
+  flex: 0 1 10%;
   align-items: center;
 
 }
