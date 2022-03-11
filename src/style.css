@@ -263,3 +263,16 @@ img {
     transform: translateX(0);
   }
 }
+
+.projects_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image_card {
+  display: flex;
+  flex: 0 1 20%;
+  align-items: center;
+
+}
