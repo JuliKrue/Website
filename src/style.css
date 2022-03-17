@@ -164,22 +164,23 @@ img {
 }
 
 .timeline_flex {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   align-items: center;
   list-style-type: none;
-
 }
 
 .timeline_details {
   display: flex;
   flex-direction: column;
+  height: 120px;
   border-bottom: 2px solid #ef0d50;
 }
 
 .tl_what {
   display: flex;
   padding: 2%;
+  height: 120px;
 }
 
 .tl_where {
@@ -267,12 +268,14 @@ img {
 .projects_flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+
 }
 
 .image_card {
-  display: flex;
-  flex: 0 1 10%;
-  align-items: center;
-
+  margin: 10px;
+  width: 300px;
+  height: 490px;
+  text-align: center;
+  border-radius: 3px;
 }
